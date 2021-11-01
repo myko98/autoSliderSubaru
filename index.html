@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <!-- Nav bar -->
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img id="logo" src="./img/logo.png" alt="">
+      </div>
+      <nav class="page-header__navbar">
+        <a href="">Vehicles</a>
+        <a href="">Shopping</a>
+        <a href="">Inventory</a>
+      </nav>
+    </header>
+
+
+    <main>
+      <section class="jumbo-slider">
+        <ul class="jumbo-slider__container">
+          <li class="jumbo-slider__slide" attr="1">
+            <div class="jumbo-slider__slide-bg">
+              <iframe
+                class="jumbo-slider__video-player"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/JTJKhMWRQTE?start=56&autoplay=1&mute=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="container">
+              <div class="jumbo-slider__info">
+                <div class="jumbo-slider__slide-number"><span class="white">//</span>BRZ</div>
+                <div class="jumbo-slider__title">
+                  Sports car purity. Subaru DNA.
+                </div>
+                <ul class="jumbo-slider__description">
+                  Designed for True Drivers
+                  <li>
+                    All-New 2.4-Liter Direct-Injection SUBARU BOXER Engine
+                  </li>
+                  <li>Retuned, Track-Tested Suspension</li>
+                  <li>Reengineered 6-Speed Automatic With Paddle Shifters</li>
+                  <li>
+                    Lightweight Chassis for Outstanding Response and Road Feel
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="jumbo-slider__timeline">
+              <div class="jumbo-slider__line"></div>
+            </div>
+          </li>
+
+          <li class="jumbo-slider__slide WRX-slide" attr="2">
+            <div
+              class="jumbo-slider__slide-bg"
+              style="
+                background: url('https://mocah.org/thumbs/944984-Subaru-WRX-STI-car-vehicle-road-motion-blur.jpg');
+              "
+            ></div>
+
+            <div class="container">
+              <div class="jumbo-slider__info">
+                <div class="jumbo-slider__slide-number"><span class="white">//</span>WRX</div>
+                <div class="jumbo-slider__title">The best-handling, best performing WRX. Ever.</div>
+                <ul class="jumbo-slider__description">
+                  Designed to Dominate Corners
+                  <li>Subaru Symmetrical All-Wheel Drive</li>
+                  <li>Track-Tuned Suspension</li>
+                  <li>Vehicle Dynamics Control with Active Torque Vectoring</li>
+                  <li>Quick-Ratio Steering and Aluminum Front Lower Control Arms</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="jumbo-slider__timeline">
+              <div class="jumbo-slider__line"></div>
+            </div>
+          </li>
+
+          <li class="jumbo-slider__slide Impreza-slide" attr="3">
+            <div
+              class="jumbo-slider__slide-bg"
+              style="
+                background: url('https://secure-akns.subaru.com/content/media/mp_fullscreen_1920/22_IMP_photos_ext_05.jpg');
+              "
+            ></div>
+
+            <div class="container">
+              <div class="jumbo-slider__info">
+                <div class="jumbo-slider__slide-number"><span class="white">//</span>IMP</div>
+                <div class="jumbo-slider__title">More than a car. It's a Subaru</div>
+                <p class="jumbo-slider__description">
+                  Capable, Durable Engineering 
+                </p>
+              </div>
+            </div>
+
+            <div class="jumbo-slider__timeline">
+              <div class="jumbo-slider__line"></div>
+            </div>
+          </li>
+        </ul>
+
+        <nav class="jumbo-slider__nav">
+          <a href="" onclick="changeColor(event)" class="jumbo-slider__link BRZ"
+            >BRZ</a
+          >
+          <a href="" onclick="changeColor(event)" class="jumbo-slider__link WRX"
+            >WRX</a
+          >
+          <a
+            href=""
+            onclick="changeColor(event)"
+            class="jumbo-slider__link Impreza"
+            >Impreza</a
+          >
+        </nav>
+        <nav class="jumbo-slider__elipsis">
+          <a href="" id="BRZ" class="jumbo-slider__circle"></a>
+          <a href="" id="WRX" class="jumbo-slider__circle"></a>
+          <a href="" id="Impreza" class="jumbo-slider__circle"></a>
+        </nav>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
